@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          const CustomButton(buttonName: "Let's go!"),
+           CustomButton(buttonName: "Let's go!"),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 84.w),
             child: Row(
