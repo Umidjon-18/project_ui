@@ -1,5 +1,6 @@
 
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:project_ui/config/constants/app_colors.dart';
@@ -48,13 +49,13 @@ class _PremiumPageState extends State<PremiumPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'TRY PREMIUM',
+                    'tryPremium'.tr(),
                     style: AppTextStyles.head36w7.copyWith(
                       color: AppColors.textColor1,
                     ),
                   ),
                   Text(
-                    'FREE!',
+                    'free'.tr().toUpperCase(),
                     style: AppTextStyles.head36w7.copyWith(
                       color: AppColors.freeColor,
                     ),
@@ -67,7 +68,7 @@ class _PremiumPageState extends State<PremiumPage> {
                       borderRadius: BorderRadius.circular(18),
                     ),
                     child: Text(
-                      'Limited offer',
+                      'limitedOffer'.tr(),
                       style: AppTextStyles.head32w5.copyWith(
                         color: AppColors.textColor1,
                       ),
@@ -106,11 +107,11 @@ class _PremiumPageState extends State<PremiumPage> {
                       children: [
                         RichText(
                           text: TextSpan(
-                            text: '3 Days',
+                            text: '3 ${'days'.tr()}',
                             style: AppTextStyles.head29w7,
                             children: [
                               TextSpan(
-                                text: 'Free',
+                                text: 'free'.tr(),
                                 style: AppTextStyles.head29w7.copyWith(
                                   color: AppColors.textColor2,
                                 ),
@@ -119,7 +120,7 @@ class _PremiumPageState extends State<PremiumPage> {
                           ),
                         ),
                         Text(
-                          'After',
+                          'after'.tr(),
                           style: AppTextStyles.body15w4,
                         ),
                         RichText(
@@ -130,21 +131,21 @@ class _PremiumPageState extends State<PremiumPage> {
                             ),
                             children: [
                               TextSpan(
-                                text: '/ Month',
+                                text: '/ ${'month'.tr()}',
                                 style: AppTextStyles.head16wB,
                               ),
                             ],
                           ),
                         ),
                         Text(
-                          'Billed every 12 months',
+                          'everyMonth'.tr(),
                           style: AppTextStyles.body15w6,
                         ),
                         
                       ],
                     ),
                   ),
-                  const CustomButton(buttonName: "Try 3 Days For Free!"),
+                  CustomButton(buttonName: "tryDaysForFree".tr()),
                 ],
               ),
             ),
@@ -155,6 +156,7 @@ class _PremiumPageState extends State<PremiumPage> {
   }
 }
 
+// ignore: must_be_immutable
 class TextContainer extends StatelessWidget {
   TextContainer({
     required this.text,

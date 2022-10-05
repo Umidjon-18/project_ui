@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -38,18 +39,18 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   SvgPicture.asset(Assets.images.cancel),
                   Text(
-                    'Restore',
+                    'restore'.tr(),
                     style: AppTextStyles.head12w4,
                   )
                 ],
               ),
             ),
             Text(
-              'UNLOCK ALL FEATURES',
+              'unlockFeature'.tr(),
               style: AppTextStyles.body24w700.copyWith(color: AppColors.whitetextColor, height: 1.084),
             ),
             Text(
-              'Build Your Perfect Morning Routine',
+              'buildRoutine'.tr(),
               style: AppTextStyles.body15w5.copyWith(color: AppColors.whitetextColor, height: 1.2),
             ),
             Padding(
@@ -59,18 +60,18 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      RoutineItem(imagePath: Assets.images.fitness, routineItemName: 'Fitness'),
-                      RoutineItem(imagePath: Assets.images.visualization, routineItemName: 'Visualization'),
-                      RoutineItem(imagePath: Assets.images.meditation, routineItemName: 'Meditations'),
+                      RoutineItem(imagePath: Assets.images.fitness, routineItemName: 'fitness'.tr()),
+                      RoutineItem(imagePath: Assets.images.visualization, routineItemName: 'visualization'.tr()),
+                      RoutineItem(imagePath: Assets.images.meditation, routineItemName: 'meditations'.tr()),
                     ],
                   ),
                   SizedBox(height: 22.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      RoutineItem(imagePath: Assets.images.reading, routineItemName: 'Reading'),
-                      RoutineItem(imagePath: Assets.images.notes, routineItemName: 'Notes'),
-                      RoutineItem(imagePath: Assets.images.affirmation, routineItemName: 'Affirmations'),
+                      RoutineItem(imagePath: Assets.images.reading, routineItemName: 'reading'.tr()),
+                      RoutineItem(imagePath: Assets.images.notes, routineItemName: 'notes'.tr()),
+                      RoutineItem(imagePath: Assets.images.affirmation, routineItemName: 'affirmations'.tr()),
                     ],
                   ),
                 ],
@@ -86,8 +87,8 @@ class _HomePageState extends State<HomePage> {
               ),
               child: Column(
                 children: [
-                  Text('2.91 USD / month', style: AppTextStyles.body24w700.copyWith(color: AppColors.letsGoColor)),
-                  Text('Billed every 12 months', style: AppTextStyles.body18w6),
+                  Text('2.91 USD / ${'month'.tr().toLowerCase()}', style: AppTextStyles.body24w700.copyWith(color: AppColors.letsGoColor)),
+                  Text('everyMonth'.tr(), style: AppTextStyles.body18w6),
                   Container(
                     height: 67.5.h,
                     width: double.maxFinite,
@@ -104,11 +105,11 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Secured with Apple Store',
+                              'secure'.tr(),
                               style: AppTextStyles.body14w6,
                             ),
                             Text(
-                              'Cancel anytime',
+                              'cancel'.tr(),
                               style: AppTextStyles.body14w6.copyWith(color: const Color(0xff664EFF)),
                             ),
                           ],
@@ -122,14 +123,14 @@ class _HomePageState extends State<HomePage> {
             const Spacer(),
             GestureDetector(
                 onTap: () => Navigator.pushNamed(context, Routes.premiumPage),
-                child: const CustomButton(buttonName: "Let's go!")),
+                child: CustomButton(buttonName: "letsGo".tr())),
             Padding(
               padding: EdgeInsets.only(left: 84.w, right: 84.w, bottom: 26.h),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Privacy Policy', style: AppTextStyles.head12w4),
-                  Text('Term of Use', style: AppTextStyles.head12w4),
+                  Text('privacy'.tr(), style: AppTextStyles.head12w4),
+                  Text('termUse'.tr(), style: AppTextStyles.head12w4),
                 ],
               ),
             ),
