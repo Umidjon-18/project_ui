@@ -24,7 +24,7 @@ class _Icons extends _AssetsHolder {
 class _Images extends _AssetsHolder {
   const _Images() : super('assets/images');
 
-  String get secure => "$basePath/secure.svg";
+  String get secure => "$basePath/secure.png";
 
   String get reading => "$basePath/reading.svg";
 
@@ -37,6 +37,8 @@ class _Images extends _AssetsHolder {
   String get affirmation => "$basePath/affirmation.svg";
   
   String get visualization => "$basePath/visualization.svg";
+
+  String get cancel => "$basePath/cancel.svg";
 
   
 }
