@@ -24,7 +24,22 @@ class _Icons extends _AssetsHolder {
 class _Images extends _AssetsHolder {
   const _Images() : super('assets/images');
 
-  String get bgGradient => "$basePath/bg_gradient.png";
+  String get secure => "$basePath/secure.png";
+
+  String get reading => "$basePath/reading.svg";
+
+  String get notes => "$basePath/notes.svg";
+  
+  String get meditation => "$basePath/meditation.svg";
+  
+  String get fitness => "$basePath/fitness.svg";
+  
+  String get affirmation => "$basePath/affirmation.svg";
+  
+  String get visualization => "$basePath/visualization.svg";
+
+  String get cancel => "$basePath/cancel.svg";
 
   
+   String get bgGradient => "$basePath/bg_gradient.png";
 }
