@@ -27,13 +27,9 @@ class CustomButton extends StatelessWidget {
       height: 66.7.h,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(19.r),
-        color: AppColors.letsGoColor,
-        border: Border.all(
-          width: 4,
-          color: const Color.fromRGBO(255, 255, 255, 0.21),
-        ),
-      ),
+          borderRadius: BorderRadius.circular(19.r),
+          color: AppColors.letsGoColor,
+          border: Border.all(width: 4.h, color: const Color.fromRGBO(255, 255, 255, 0.21))),
       child: Text(
         buttonName,
         style: AppTextStyles.body15w7.copyWith(color: AppColors.whitetextColor),
