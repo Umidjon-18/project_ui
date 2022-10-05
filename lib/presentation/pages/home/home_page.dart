@@ -6,6 +6,7 @@ import 'package:project_ui/config/constants/app_text_styles.dart';
 
 import '../../../config/constants/assets.dart';
 import '../../components/custom_button.dart';
+import 'components/routine_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,48 +50,18 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      children: [
-                        SvgPicture.asset(Assets.images.fitness),
-                        Text('Fitness', style: AppTextStyles.body14w5),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        SvgPicture.asset(Assets.images.visualization),
-                        Text('Visualization', style: AppTextStyles.body14w5),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        SvgPicture.asset(Assets.images.meditation),
-                        Text('Meditations', style: AppTextStyles.body14w5),
-                      ],
-                    ),
+                    RoutineItem(imagePath: Assets.images.fitness, routineItemName: 'Fitness'),
+                    RoutineItem(imagePath: Assets.images.visualization, routineItemName: 'Visualization'),
+                    RoutineItem(imagePath: Assets.images.meditation, routineItemName: 'Meditations'),
                   ],
                 ),
                 SizedBox(height: 22.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      children: [
-                        SvgPicture.asset(Assets.images.reading),
-                        Text('Reading', style: AppTextStyles.body14w5),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        SvgPicture.asset(Assets.images.notes),
-                        Text('Notes', style: AppTextStyles.body14w5),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        SvgPicture.asset(Assets.images.affirmation),
-                        Text('Affirmations', style: AppTextStyles.body14w5),
-                      ],
-                    ),
+                    RoutineItem(imagePath: Assets.images.reading, routineItemName: 'Reading'),
+                    RoutineItem(imagePath: Assets.images.notes, routineItemName: 'Notes'),
+                    RoutineItem(imagePath: Assets.images.affirmation, routineItemName: 'Affirmations'),
                   ],
                 ),
               ],
