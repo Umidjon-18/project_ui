@@ -16,7 +16,7 @@ abstract class Themes {
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.baseLight.shade100,
         centerTitle: true,
-        titleTextStyle: AppTextStyles.b1Medium.copyWith(color: AppColors.metalColor.shade100),
+        titleTextStyle: AppTextStyles.b3Medium.copyWith(color: AppColors.metalColor.shade100),
         iconTheme: IconThemeData(
           color: AppColors.metalColor.shade100,
         ),

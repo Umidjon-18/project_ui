@@ -7,151 +7,154 @@ abstract class AppTextStyles {
 
   static const String fontFamily = 'Inter';
 
-  static TextStyle h1 = TextStyle(
+  static TextStyle head36w7 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 28.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 36,
+      color: AppColors.textColorDef);
 
-  static TextStyle h2 = TextStyle(
+  static TextStyle head32w5 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
-      fontSize: 24.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 32,
+      color: AppColors.textColorDef);
 
-  static TextStyle h3 = TextStyle(
+  static TextStyle head64w7 = const TextStyle(
       fontFamily: fontFamily,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 20.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 64,
+      color: AppColors.textColorDef);
 
-  static TextStyle h4 = TextStyle(
+  static TextStyle head16wB = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.bold,
       fontStyle: FontStyle.normal,
-      fontSize: 18.0,
-      color: AppColors.metalColor.shade100);
-
-  static TextStyle h5 = TextStyle(
-      fontFamily: fontFamily,
-      fontWeight: FontWeight.w400,
-      fontStyle: FontStyle.normal,
-      fontSize: 14.0,
-      color: AppColors.metalColor.shade100);
-
-  static TextStyle h6 = TextStyle(
+      fontSize: 16,
+      color: AppColors.textColorDef);
+  static TextStyle head20wB = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.bold,
       fontStyle: FontStyle.normal,
-      fontSize: 11.0,
-      color: AppColors.metalColor.shade10);
+      fontSize: 20,
+      color: AppColors.textColorDef);
 
-  static TextStyle h7 = TextStyle(
-      fontFamily: fontFamily,
-      fontWeight: FontWeight.w600,
-      fontStyle: FontStyle.normal,
-      fontSize: 18.0,
-      color: AppColors.metalColor.shade100);
-
-  static TextStyle h8 = TextStyle(
+  static TextStyle head29w7 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 16.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 29,
+      color: AppColors.textColorDef);
 
-  static TextStyle b1Medium = TextStyle(
+  static TextStyle head12wB = const TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.bold,
+      fontStyle: FontStyle.normal,
+      fontSize: 12,
+      color: AppColors.textColorDef);
+
+  static TextStyle body18w5 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
-      fontSize: 17.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 18,
+      color: AppColors.textColorDef);
 
-  static TextStyle b1Regular = TextStyle(
+  static TextStyle body18w4 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
-      fontSize: 17.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 18,
+      color: AppColors.textColorDef);
 
-  static TextStyle b2DemiBold = TextStyle(
+  static TextStyle body16w6 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w600,
       fontStyle: FontStyle.normal,
-      fontSize: 15.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 16,
+      color: AppColors.textColorDef);
 
-  static TextStyle b2Medium = TextStyle(
+  static TextStyle body16w5 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
-      fontSize: 15.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 16,
+      color: AppColors.textColorDef);
 
-  static TextStyle b5Medium = TextStyle(
+  static TextStyle body15w5 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
-      fontSize: 14.0,
-      color: AppColors.metalColor.shade100);
-
-  static TextStyle b3DemiBold = TextStyle(
+      fontSize: 15,
+      color: AppColors.textColorDef);
+       static TextStyle body15w6 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w600,
       fontStyle: FontStyle.normal,
-      fontSize: 13.0,
-      height: 18 / 13,
-      color: AppColors.metalColor.shade100);
-
-  static TextStyle b4DemiBold = TextStyle(
+      fontSize: 15,
+      color: AppColors.textColorDef);
+  static TextStyle body15w4 = const TextStyle(
       fontFamily: fontFamily,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
-      fontSize: 14.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 15,
+      color: AppColors.textColorDef);
 
-  static TextStyle b5DemiBold = TextStyle(
+  static TextStyle body14w6 = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w600,
       fontStyle: FontStyle.normal,
-      fontSize: 14.0,
-      color: AppColors.metalColor.shade100);
-  static TextStyle b6DemiBold = TextStyle(
+      fontSize: 14,
+      color: AppColors.textColorDef);
+
+  static TextStyle body14w5 = const TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+      fontSize: 14,
+      color: AppColors.textColorDef);
+
+  static TextStyle b5DemiBold = const TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w600,
+      fontStyle: FontStyle.normal,
+      fontSize: 15,
+      color: AppColors.textColorDef);
+  static TextStyle b6DemiBold = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
-      fontSize: 17.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 18,
+      color: AppColors.textColorDef);
 
-  static TextStyle b3Medium = TextStyle(
+  static TextStyle b3Medium = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
-      fontSize: 13.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 14,
+      color: AppColors.textColorDef);
 
-  static TextStyle b4Medium = TextStyle(
+  static TextStyle b4Medium = const TextStyle(
     fontFamily: fontFamily,
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
-    fontSize: 12.0,
-    color: AppColors.metalColor.shade100,
-    height: 21/16);
+    fontSize: 13,
+    color: AppColors.textColorDef,
+  );
 
-  static TextStyle b4Regular = TextStyle(
+  static TextStyle b4Regular = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
-      fontSize: 12.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 13,
+      color: AppColors.textColorDef);
 
-  static TextStyle b5Regular = TextStyle(
+  static TextStyle b5Regular = const TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
-      fontSize: 14.0,
-      color: AppColors.metalColor.shade100);
+      fontSize: 15,
+      color: AppColors.textColorDef);
 }

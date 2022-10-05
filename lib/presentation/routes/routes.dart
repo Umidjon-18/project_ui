@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:project_ui/presentation/pages/home/home_page.dart';
 import 'package:project_ui/presentation/pages/premium/premium_page.dart';
 class Routes {
-  static const homePage = '/';
-  static const premiumPage = '/premiumPage';
+  static const homePage = '/homePage';
+  static const premiumPage = '/';
 
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
     try {

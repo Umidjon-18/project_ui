@@ -24,7 +24,7 @@ class _Icons extends _AssetsHolder {
 class _Images extends _AssetsHolder {
   const _Images() : super('assets/images');
 
-  String get userAvatar1 => "$basePath/img_user1.jpeg";
+  String get bgGradient => "$basePath/bg_gradient.png";
 
   
 }
