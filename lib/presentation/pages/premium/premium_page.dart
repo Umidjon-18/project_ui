@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -40,14 +38,16 @@ class _PremiumPageState extends State<PremiumPage> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    top: 40.h,
-                    left: 20.9.w,
+                    top: 37.h,
+                    left: 39.w,
                   ),
                   child: Align(
                     alignment: Alignment.centerLeft,
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: SvgPicture.asset(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: SvgPicture.asset(
                         Assets.icons.cancel,
                       ),
                     ),
@@ -206,17 +206,16 @@ class _PremiumPageState extends State<PremiumPage> {
                     ],
                   ),
                 ),
+                const Spacer(),
                 CustomButton(
                   buttonName: "Try 3 Days For Free!",
-                  margin: EdgeInsets.only(
-                    bottom: 24.h,
-                    left: 33.3.w,
-                    right: 33.3.w,
-                    top: 50.74.h,
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 33.3.w,
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 84.w),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 84.w, vertical: 24.h),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
