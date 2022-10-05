@@ -9,6 +9,8 @@ import 'package:project_ui/config/constants/app_decorations.dart';
 import 'package:project_ui/config/constants/app_text_styles.dart';
 import 'package:project_ui/config/constants/assets.dart';
 
+import '../../components/custom_button.dart';
+
 class PremiumPage extends StatefulWidget {
   const PremiumPage({super.key});
 
@@ -144,6 +146,7 @@ class _PremiumPageState extends State<PremiumPage> {
                       ],
                     ),
                   ),
+                  const CustomButton(buttonName: "Try 3 Days For Free!"),
                 ],
               ),
             ),
