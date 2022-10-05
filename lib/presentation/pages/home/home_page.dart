@@ -5,6 +5,7 @@ import 'package:project_ui/config/constants/app_colors.dart';
 import 'package:project_ui/config/constants/app_text_styles.dart';
 
 import '../../../config/constants/assets.dart';
+import '../../components/custom_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -137,20 +138,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(top: 108.h, bottom: 24.h, left: 33.3.w, right: 33.3.w),
-            width: double.maxFinite,
-            height: 66.7.h,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(19.r),
-                color: AppColors.letsGoColor,
-                border: Border.all(width: 4, color: const Color.fromRGBO(255, 255, 255, 0.21))),
-            child: Text(
-              "Let's go!",
-              style: AppTextStyles.body15w7.copyWith(color: AppColors.whitetextColor),
-            ),
-          ),
+          const CustomButton(buttonName: "Let's go!"),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 84.w),
             child: Row(
@@ -166,3 +154,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
