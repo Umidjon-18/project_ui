@@ -17,7 +17,7 @@ abstract class _AssetsHolder {
 class _Icons extends _AssetsHolder {
   const _Icons() : super('assets/icons');
 
-  String get homeMenu => '$basePath/menu_icons/ic_home_menu.svg';
+  String get cancel => '$basePath/ic_cancel.svg';
 
 }
 
@@ -41,4 +41,5 @@ class _Images extends _AssetsHolder {
   String get cancel => "$basePath/cancel.svg";
 
   
+   String get bgGradient => "$basePath/bg_gradient.png";
 }
