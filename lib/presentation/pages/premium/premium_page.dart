@@ -57,13 +57,13 @@ class _PremiumPageState extends State<PremiumPage> {
                   ),
                 ),
                 Text(
-                  'TRY PREMIUM',
+                  'tryPremium'.tr(),
                   style: AppTextStyles.head36w7.copyWith(
                     color: AppColors.textColor1,
                   ),
                 ),
                 Text(
-                  'FREE!',
+                  '${'free'.tr().toUpperCase()}!',
                   style: AppTextStyles.head36w7.copyWith(
                     color: AppColors.freeColor,
                   ),
@@ -77,7 +77,7 @@ class _PremiumPageState extends State<PremiumPage> {
                     borderRadius: BorderRadius.circular(18.r),
                   ),
                   child: Text(
-                    'Limited Offer',
+                    'limitedOffer'.tr(),
                     style: AppTextStyles.head32w7.copyWith(
                       color: AppColors.textColor1,
                     ),
@@ -131,11 +131,11 @@ class _PremiumPageState extends State<PremiumPage> {
                     children: [
                       RichText(
                         text: TextSpan(
-                          text: '3 Days',
+                          text: '3 ${'days'.tr()}',
                           style: AppTextStyles.head29w7,
                           children: [
                             TextSpan(
-                              text: 'Free',
+                              text: 'free'.tr(),
                               style: AppTextStyles.head29w7.copyWith(
                                 color: AppColors.textColor2,
                               ),
@@ -146,7 +146,7 @@ class _PremiumPageState extends State<PremiumPage> {
                       Padding(
                         padding: EdgeInsets.symmetric(vertical: 7.2.h),
                         child: Text(
-                          'After',
+                          'after'.tr(),
                           style: AppTextStyles.body15w4,
                         ),
                       ),
@@ -158,7 +158,7 @@ class _PremiumPageState extends State<PremiumPage> {
                           ),
                           children: [
                             TextSpan(
-                              text: '/ Month',
+                              text: '/ ${'month'.tr()}',
                               style: AppTextStyles.head16wB,
                             ),
                           ],
@@ -168,7 +168,7 @@ class _PremiumPageState extends State<PremiumPage> {
                         height: 5.h,
                       ),
                       Text(
-                        'Billed every 12 months',
+                        'everyMonth'.tr(),
                         style: AppTextStyles.body15w6,
                       ),
                       Container(
@@ -193,11 +193,11 @@ class _PremiumPageState extends State<PremiumPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Secured with Apple Store',
+                                  'secure'.tr(),
                                   style: AppTextStyles.body14w6,
                                 ),
                                 Text(
-                                  'Cancel anytime',
+                                  'cancel'.tr(),
                                   style: AppTextStyles.body14w6
                                       .copyWith(color: const Color(0xff664EFF)),
                                 ),
@@ -211,7 +211,7 @@ class _PremiumPageState extends State<PremiumPage> {
                 ),
                 const Spacer(),
                 CustomButton(
-                  buttonName: "Try 3 Days For Free!",
+                  buttonName: "tryDaysForFree".tr(),
                   margin: EdgeInsets.symmetric(
                     horizontal: 33.3.w,
                   ),
@@ -222,8 +222,8 @@ class _PremiumPageState extends State<PremiumPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Privacy Policy', style: AppTextStyles.head12w4),
-                      Text('Term of Use', style: AppTextStyles.head12w4),
+                      Text('privacy'.tr(), style: AppTextStyles.head12w4),
+                      Text('termUse'.tr(), style: AppTextStyles.head12w4),
                     ],
                   ),
                 ),

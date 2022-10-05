@@ -18,7 +18,6 @@ class CustomButton extends StatelessWidget {
     return Container(
       margin: margin ??
           EdgeInsets.only(
-            top: 108.h,
             bottom: 24.h,
             left: 33.3.w,
             right: 33.3.w,
