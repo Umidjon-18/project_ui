@@ -22,11 +22,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(
-                    Assets.images.bgGradient,
-                  ),
-                  fit: BoxFit.cover,
-                ),
+          image: DecorationImage(
+            image: AssetImage(
+              Assets.images.bgGradient,
+            ),
+            fit: BoxFit.cover,
+          ),
         ),
         child: Column(
           children: [
@@ -91,7 +92,8 @@ class _HomePageState extends State<HomePage> {
                     height: 67.5.h,
                     width: double.maxFinite,
                     margin: EdgeInsets.only(top: 10.h),
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(21.r), color: AppColors.secureBgColor),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(21.r), color: AppColors.secureBgColor),
                     padding: EdgeInsets.symmetric(horizontal: 17.w, vertical: 9.h),
                     child: Row(
                       children: [
@@ -117,11 +119,12 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            const Spacer(),
             GestureDetector(
-              onTap: () => Navigator.pushNamed(context, Routes.premiumPage),
-              child: const CustomButton(buttonName: "Let's go!")),
+                onTap: () => Navigator.pushNamed(context, Routes.premiumPage),
+                child: const CustomButton(buttonName: "Let's go!")),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 84.w),
+              padding: EdgeInsets.only(left: 84.w, right: 84.w, bottom: 26.h),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -136,4 +139,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
