@@ -87,7 +87,8 @@ class _HomePageState extends State<HomePage> {
               ),
               child: Column(
                 children: [
-                  Text('2.91 USD / ${'month'.tr().toLowerCase()}', style: AppTextStyles.body24w700.copyWith(color: AppColors.letsGoColor)),
+                  Text('2.91 USD / ${'month'.tr().toLowerCase()}',
+                      style: AppTextStyles.body24w700.copyWith(color: AppColors.letsGoColor)),
                   Text('everyMonth'.tr(), style: AppTextStyles.body18w6),
                   Container(
                     height: 67.5.h,
@@ -100,19 +101,21 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Image.asset(Assets.images.secure, width: 49.w, height: 49.w),
                         SizedBox(width: 7.w),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'secure'.tr(),
-                              style: AppTextStyles.body14w6,
-                            ),
-                            Text(
-                              'cancel'.tr(),
-                              style: AppTextStyles.body14w6.copyWith(color: const Color(0xff664EFF)),
-                            ),
-                          ],
+                        Flexible(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'secure'.tr(),
+                                style: AppTextStyles.body14w6,
+                              ),
+                              Text(
+                                'cancel'.tr(),
+                                style: AppTextStyles.body14w6.copyWith(color: const Color(0xff664EFF)),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
