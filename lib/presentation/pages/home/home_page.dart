@@ -46,6 +46,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Text(
               'unlockFeature'.tr(),
+              textAlign: TextAlign.center,
               style: AppTextStyles.body24w700.copyWith(color: AppColors.whitetextColor, height: 1.084),
             ),
             Text(
@@ -98,9 +99,9 @@ class _HomePageState extends State<HomePage> {
                 onTap: () => Navigator.pushNamed(context, Routes.premiumPage),
                 child: CustomButton(buttonName: "letsGo".tr())),
             Padding(
-              padding: EdgeInsets.only(left: 84.w, right: 84.w, bottom: 26.h),
+              padding: EdgeInsets.only(bottom: 26.h),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text('privacy'.tr(), style: AppTextStyles.head12w4),
                   Text('termUse'.tr(), style: AppTextStyles.head12w4),

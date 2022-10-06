@@ -70,7 +70,7 @@ class _PremiumPageState extends State<PremiumPage> {
               ),
               child: Text(
                 'limitedOffer'.tr(),
-                style: AppTextStyles.head32w7.copyWith(
+                style: AppTextStyles.head29w7.copyWith(
                   color: AppColors.textColor1,
                 ),
               ),
@@ -157,9 +157,9 @@ class _PremiumPageState extends State<PremiumPage> {
               margin: EdgeInsets.symmetric(horizontal: 33.3.w),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 84.w, vertical: 24.h),
+              padding: EdgeInsets.symmetric(vertical: 24.h),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text('privacy'.tr(), style: AppTextStyles.head12w4),
                   Text('termUse'.tr(), style: AppTextStyles.head12w4),
